@@ -1,0 +1,40 @@
+<h5>Details View</h5>
+<!--<form>-->
+  <div class="form-inline" style="border:5px solid black;height:350px; margin:20px">
+    <div style="vertical-align:top;border-right:5px solid black;height:340px">
+      <ul class="details flex-grow">
+        <li *ngFor="let item of summary"
+            [class.selected]="item === selected"
+            (click)="onSelect(item)">
+          {{item.samplingTime}}
+        </li>
+      </ul>
+    </div>
+    <div *ngIf="selected">
+      <div class="form-group form-inline">
+        <label for="project-name">Project Name: </label>
+        <input id="project-name" [(ngModel)]="selected.projectName" class="form-control" style="width:300px;">
+      </div><br />
+      <div class="form-group form-inline">
+        <label for="construction-count">Construction Count: </label>
+        <input id="construction-count" [(ngModel)]="selected.constructionCount" class="form-control" style="width:300px;">
+      </div><br />
+      <div class="form-group form-inline">
+        <label for="is-completed">Is Construction Completed: </label>
+        <input type="checkbox" id="is-completed" [(ngModel)]="selected.isConstructionCompleted" class="form-control">
+      </div><br />
+      <div class="form-group form-inline">
+        <label for="road-length">Length of the road: </label>
+        <div class="form-group form-inline">
+          <input id="road-length" [(ngModel)]="selected.lengthOfTheRoad" class="form-control" style="width:300px;padding-right:40px; text-align:right;"><span style="margin-left:-30px;">{{selected.unit}}</span>
+        </div>
+      </div><br />
+      <div class="form-group form-inline">
+        <label></label>
+        <!--<div class="form-control" style="float: right;">-->
+          <button (click)="updateData(selected)">Save</button>
+        <!--</div>-->
+      </div>
+    </div>
+  </div>
+  <!--</form>-->
