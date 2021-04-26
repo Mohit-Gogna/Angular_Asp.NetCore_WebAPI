@@ -13,10 +13,10 @@ You will need the following tools:
 2) .NET Core SDK 3.1
 3) Node.js (version 10 or later) with npm (version 6.9.0 or later)
 
-Installation
+Installation : 
 Open Project template from the Visual Studio 2019 and do Build -> Clean Solution then Build -> Rebuild Solution - it will update all nuget packages. Launch with F5 or Ctrl+F5
 
-Installation Notes
+Installation Notes : 
 You should have the latest version of Node.js, which is supported by Angular CLI 8.0+
 When running the project please wait for all dependencies to be restored; "dotnet restore" for asp.net api project & "npm install" for angular project. When using VisualStudio this is automatic, check the output window or status bar to know that the package/dependencies restore process is complete before launching your program for the first time.
 If you get any errors, consider running manually the steps to build the project and note where the errors occur. Open command prompt and do the below steps:
