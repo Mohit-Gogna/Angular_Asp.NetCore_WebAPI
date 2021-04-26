@@ -2,9 +2,16 @@
 A sample Angular 8 / ASP.NET Core 3.1 (cross-platform ) project template with summary and detail view binding data from api get and post api implementation. As well as other common functionalities for angular single page application.
 
 This application consists of:
-Angular spa frontend project developed using Angular 8 and TypeScript
-RESTful API Backend project using ASP.NET Core 3.1 MVC Web API
-JSON file as data source
+1) Angular spa frontend project developed using Angular 8 and TypeScript
+2) RESTful API Backend project using ASP.NET Core 3.1 MVC Web API
+3) JSON file as data source
+
+Prerequisites
+You will need the following tools:
+
+1) Visual Studio Code or Visual Studio 2019 Preview
+2) .NET Core SDK 3.1
+3) Node.js (version 10 or later) with npm (version 6.9.0 or later)
 
 Installation
 Open Project template from the Visual Studio 2019 and do Build -> Clean Solution then Build -> Rebuild Solution - it will update all nuget packages. Launch with F5 or Ctrl+F5
